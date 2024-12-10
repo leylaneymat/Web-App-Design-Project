@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+      target: server
+    container_name: ktu-backend
+    ports:
+      - 8000:8000  # http://localhost:8000/
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - type: bind
+        source: ./backend/src/db.sqlite3
+        target: /src/db.sqlite3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: ktu-frontend
+    ports:
+      - 8080:8080  # http://localhost:8080/
+
+networks:
+  default:
+    name: ktu-network

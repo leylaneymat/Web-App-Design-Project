@@ -1,0 +1,306 @@
+[
+    {
+        "model": "users.user",
+        "pk": 1,
+        "fields": {
+            "username": "__test_1__",
+            "first_name": "John",
+            "last_name": "Doe",
+            "email": "john.doe@example.com",
+            "password": "pbkdf2_sha256$870000$bCfl4hCrwTZZ7TY2cUEv1d$RKxwbrX6/SFZbTlRyo++N7tUpZAQPwDOQCXgptpTYI0=",
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 2,
+        "fields": {
+            "username": "__test_2__",
+            "first_name": "Jane",
+            "last_name": "Smith",
+            "email": "jane.smith@example.com",
+            "password": "pbkdf2_sha256$870000$Ea6lc1CH8XYsz90fQoCFFg$JAxf2yRuPUZWYzX9Yen9B9vj3WIQdnWN9DGJBXLGKM4=",
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 3,
+        "fields": {
+            "username": "__test_3__",
+            "first_name": "Alice",
+            "last_name": "Johnson",
+            "email": "alice.johnson@example.com",
+            "password": "pbkdf2_sha256$870000$H5GfcW5NIndhChgUA5Dqdr$cougcGhG8oCk/M/VbVKnkr3nrwf8ev8kh1F+4ULiya8=",
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 1,
+        "fields": {
+            "name": "First Event",
+            "description": "Welcome to the first event. Enjoy the experience!"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 2,
+        "fields": {
+            "name": "Tech Conference 2024",
+            "description": "Join us for the latest insights in technology and innovation."
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 3,
+        "fields": {
+            "name": "Music Festival 2024",
+            "description": "A celebration of music and arts. Don’t miss it!"
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 4,
+        "fields": {
+            "name": "Art Expo 2024",
+            "description": "Explore the creativity of artists from around the world."
+        }
+    },
+    {
+        "model": "events.event",
+        "pk": 5,
+        "fields": {
+            "name": "Food Festival",
+            "description": "Taste the best dishes from various cuisines."
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 1,
+        "fields": {
+            "name": "Standard Ticket",
+            "price": 50.00,
+            "event": 1
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 2,
+        "fields": {
+            "name": "VIP Ticket",
+            "price": 150.00,
+            "event": 1
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 3,
+        "fields": {
+            "name": "Group Ticket",
+            "price": 200.00,
+            "event": 1
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 4,
+        "fields": {
+            "name": "Early Bird Ticket",
+            "price": 75.00,
+            "event": 2
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 5,
+        "fields": {
+            "name": "Regular Ticket",
+            "price": 100.00,
+            "event": 2
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 6,
+        "fields": {
+            "name": "Student Ticket",
+            "price": 40.00,
+            "event": 2
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 7,
+        "fields": {
+            "name": "General Admission",
+            "price": 30.00,
+            "event": 3
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 8,
+        "fields": {
+            "name": "Backstage Pass",
+            "price": 200.00,
+            "event": 3
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 9,
+        "fields": {
+            "name": "Family Pack",
+            "price": 120.00,
+            "event": 3
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 10,
+        "fields": {
+            "name": "Exhibitor Pass",
+            "price": 100.00,
+            "event": 4
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 11,
+        "fields": {
+            "name": "Workshop Ticket",
+            "price": 80.00,
+            "event": 4
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 12,
+        "fields": {
+            "name": "Tasting Ticket",
+            "price": 15.00,
+            "event": 5
+        }
+    },
+    {
+        "model": "events.ticket",
+        "pk": 13,
+        "fields": {
+            "name": "Foodies Special",
+            "price": 50.00,
+            "event": 5
+        }
+    },
+    {
+        "model": "events.like",
+        "pk": 1,
+        "fields": {
+            "event": 1,
+            "user": 1
+        }
+    },
+    {
+        "model": "events.like",
+        "pk": 2,
+        "fields": {
+            "event": 1,
+            "user": 2
+        }
+    },
+    {
+        "model": "events.like",
+        "pk": 3,
+        "fields": {
+            "event": 1,
+            "user": 3
+        }
+    },
+    {
+        "model": "events.like",
+        "pk": 4,
+        "fields": {
+            "event": 2,
+            "user": 1
+        }
+    },
+    {
+        "model": "events.like",
+        "pk": 5,
+        "fields": {
+            "event": 2,
+            "user": 2
+        }
+    },
+    {
+        "model": "events.like",
+        "pk": 6,
+        "fields": {
+            "event": 2,
+            "user": 3
+        }
+    },
+    {
+        "model": "events.comment",
+        "pk": 1,
+        "fields": {
+            "text": "This event is going to be amazing!",
+            "event": 1,
+            "user": 1
+        }
+    },
+    {
+        "model": "events.comment",
+        "pk": 2,
+        "fields": {
+            "text": "Can’t wait to be there!",
+            "event": 1,
+            "user": 1
+        }
+    },
+    {
+        "model": "events.comment",
+        "pk": 3,
+        "fields": {
+            "text": "I love this venue!",
+            "event": 1,
+            "user": 1
+        }
+    },
+    {
+        "model": "events.comment",
+        "pk": 4,
+        "fields": {
+            "text": "Looking forward to the speakers!",
+            "event": 2,
+            "user": 1
+        }
+    },
+    {
+        "model": "events.comment",
+        "pk": 5,
+        "fields": {
+            "text": "Great networking opportunities!",
+            "event": 2,
+            "user": 1
+        }
+    },
+    {
+        "model": "events.comment",
+        "pk": 6,
+        "fields": {
+            "text": "Excited for the performances!",
+            "event": 3,
+            "user": 1
+        }
+    },
+    {
+        "model": "events.comment",
+        "pk": 7,
+        "fields": {
+            "text": "This is going to be epic!",
+            "event": 3,
+            "user": 1
+        }
+    }
+]

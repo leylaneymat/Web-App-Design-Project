@@ -1,0 +1,13 @@
+[project]
+name = "src"
+version = "v1.0"
+description = "Project for Web App Design course"
+authors = [{name = "Leyla Neymat", email = "leyla.neymat@gmail.com"}]
+readme = "README.md"
+requires-python = ">= 3.12"
+dependencies = [
+  "django",
+  "djangorestframework",
+  "drf-yasg",
+  "djangorestframework-simplejwt",
+]
