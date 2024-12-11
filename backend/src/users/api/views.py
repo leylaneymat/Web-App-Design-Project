@@ -37,9 +37,13 @@ class PurchasedTicketViewSet(viewsets.ModelViewSet):
         user_pk = self.kwargs["user_pk"]
         user = get_object_or_404(User, pk=user_pk)
         
-        if user != self.request.user or not user.is_authenticated:
+        if (
+            not self.request.user.is_staff
+            and user != self.request_user
+            or not self.request.user.is_authenticated
+        ):
             raise PermissionDenied()
-        
+
         serializer.save(user=user)
 
 
